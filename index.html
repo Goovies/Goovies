@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css">
- 
   <title>Goovies - Home</title>
 </head>
 <body>
@@ -44,12 +43,12 @@
         <h2>Já sabe por onde começar?</h2>
         <p>Encontre em nosso site todos os filmes da atualidade</p>
         <div class="submit">
-          <input type="text" placeholder="Ex: Duna 2" id="movie-name">
+          <input type="text" placeholder="Ex: O Poderoso Chefão" id="movie-name">
           <input type="text" placeholder="Ano..." id="year-movie">
           <button type="submit"><img src="./images/icones/search.svg" alt="Botão de busca para filmes pesquisados" id="search-movie"></button>
         </div>
 
-        <article id="movie-container" class="mt-2">
+        <article id="movie-container" class="mt-2 hidden-movie-container">
           
         </article>        
       </div>
@@ -117,6 +116,17 @@
     <script src="./script.js"></script>
     <script src="key.js"></script>
     <script src="./src/notie-master/dist/notie.min.js"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   
 </body>
 </html>
